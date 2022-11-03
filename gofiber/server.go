@@ -10,6 +10,7 @@ import (
 )
 
 var API_KEY = os.Getenv("API_KEY")
+var FUNCTION_ENV = os.Getenv("FUNCTION_ENV")
 
 func main() {
 	app := fiber.New()
@@ -18,7 +19,13 @@ func main() {
 		return c.SendString("Hello, World!")
 	})
 
-	client := kontenbase.NewClient(API_KEY, kontenbase.DefaultURL())
+	baseURL := "https://api.v2.kontenbase.com"
+
+	if FUNCTION_ENV == "development" {
+		baseURL = "https://api.stagingv2.kontenbase.com"
+	}
+
+	client := kontenbase.NewClient(API_KEY, baseURL)
 
 	products := app.Group("/products")
 
