@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/gofiber/fiber/v2 v2.35.0
-	github.com/kontenbase/kontenbase-go v0.0.0-20221103170632-fff8c7218a1f
+	github.com/kontenbase/kontenbase-go v0.0.0-20221103175851-bbee5518aa7f
 )
 
 require (
