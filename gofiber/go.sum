@@ -25,6 +25,8 @@ github.com/klauspost/cpuid/v2 v2.0.5 h1:qnfhwbFriwDIX51QncuNU5mEMf+6KE3t7O8V2KQl
 github.com/klauspost/cpuid/v2 v2.0.5/go.mod h1:FInQzS24/EEf25PyTYn52gqo7WaD8xa0213Md/qVLRg=
 github.com/kontenbase/kontenbase-go v0.0.0-20220703073357-30843c3b2589 h1:mLwgb99Rc2zCOe9q4WJp8xYMfIhQawiDAEtlf+6BvYM=
 github.com/kontenbase/kontenbase-go v0.0.0-20220703073357-30843c3b2589/go.mod h1:kLCeIufTDyk4oqU7f1N0Awxs+OByp72EgzNkl79YJcw=
+github.com/kontenbase/kontenbase-go v0.0.0-20221103170632-fff8c7218a1f h1:hXS2uwAitzRnEolgbH2WkMx0R7lFFHYAr4bZB7/MxpA=
+github.com/kontenbase/kontenbase-go v0.0.0-20221103170632-fff8c7218a1f/go.mod h1:kLCeIufTDyk4oqU7f1N0Awxs+OByp72EgzNkl79YJcw=
 github.com/mailru/easyjson v0.7.7 h1:UGYAvKxe3sBsEDzO8ZeWOSlIQfWFlxbzLZe7hwFURr0=
 github.com/mailru/easyjson v0.7.7/go.mod h1:xzfreul335JAWq5oZzymOObrkdz5UnU4kGfJJLY9Nlc=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
