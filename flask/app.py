@@ -10,7 +10,9 @@ api_key = os.environ.get("API_KEY", "")
 if api_key == "":
     print("api key is required", file=stderr)
 
-api_base_url = "https://api.stagingv2.kontenbase.com/query/api/v1/" + api_key
+function_env = os.environ.get("FUNCTION_ENV", "")
+base_url = "https://api.stagingv2.kontenbase.com/query/api/v1/" if function_env == "development" else "https://api.v2.kontenbase.com/query/api/v1/"
+api_base_url = base_url + api_key
 
 @app.route('/')
 def hello_geek():
