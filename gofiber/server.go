@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"os"
 
@@ -25,7 +26,7 @@ func main() {
 		baseURL = "https://api.stagingv2.kontenbase.com"
 	}
 
-	client := kontenbase.NewClient(API_KEY, baseURL)
+	client := kontenbase.NewClient(API_KEY, fmt.Sprintf("%s/query/api/v1", baseURL))
 
 	products := app.Group("/products")
 
