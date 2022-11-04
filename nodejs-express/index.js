@@ -5,7 +5,7 @@ const port = 3000;
 
 const client = new kontenbase.KontenbaseClient({
   apiKey: process.env.API_KEY,
-  url: "https://api.stagingv2.kontenbase.com",
+  url: process.env.FUNCTION_ENV === "development" ? "https://api.stagingv2.kontenbase.com" : "https://api.v2.kontenbase.com",
 });
 
 app.get("/", (req, res) => {
